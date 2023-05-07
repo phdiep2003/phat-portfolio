@@ -1,0 +1,57 @@
+.header__navbar-item:hover{
+    cursor:pointer;
+    color:rgba(255,255,255,0.5);
+}
+
+.about-me{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#hello-intro{color:rgb(255, 47, 0);} 
+    
+
+img{
+    max-height:250px;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+
+#summary{
+    margin:0 0;
+    font-size:1rem;
+    justify-content: center;
+    line-height: 1.5rem;
+}
+
+.body__heading-text{
+    list-style: none;
+}
+.date{
+    font-size: 1rem;
+}
+
+.section-list{
+    padding:6px 0rem 1rem 1rem;
+}
+#education,#work{
+    padding-top: 1rem;
+}
+
+.working{
+    display: flex;
+    justify-content: space-between;
+}
+.work{
+    display: inline-flex;
+}
+
+.certificate {
+    padding-bottom: 1rem;
+}
+
+.certi{
+    padding-bottom: 0.2rem;
+    color:rgb(27, 78, 230);
+}
