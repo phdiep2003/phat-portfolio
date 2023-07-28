@@ -60,6 +60,28 @@ img{
 
 /* Add responsive styles for smaller screens like phones */
 @media screen and (max-width: 768px) {
+    .header__navbar {
+        display: none; /* Hide the navigation links by default on small screens */
+    }
+    
+    .menu-button {
+        display: block; /* Show the menu button on small screens */
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    .menu-button .line {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        margin: 6px auto;
+    }
+}
+/* Add responsive styles for smaller screens like phones */
+@media screen and (max-width: 768px) {
     img {
         max-height: 200px; /* Example: reduce image height for smaller screens */
     }
@@ -90,27 +112,4 @@ img{
     }
     
     /* Add any other responsive styles you need for tablets */
-}
-
-/* Add responsive styles for smaller screens like phones */
-@media screen and (max-width: 768px) {
-    .header__navbar {
-        display: none; /* Hide the navigation links by default on small screens */
-    }
-    
-    .menu-button {
-        display: block; /* Show the menu button on small screens */
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-    }
-    
-    .line {
-        display: block;
-        width: 30px;
-        height: 2px;
-        background-color: white;
-        margin: 6px auto;
-    }
 }
