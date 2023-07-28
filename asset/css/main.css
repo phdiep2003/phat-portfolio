@@ -91,6 +91,16 @@ img{
     
     /* Add any other responsive styles you need for tablets */
 }
-
-/* Add responsive styles for even larger screens (if needed) */
-@media screen and (min-width: 1025px) {
+/* Add responsive styles for smaller screens like phones */
+@media screen and (max-width: 768px) {
+    .header__navbar {
+        flex-direction: column; /* Stack navbar items vertically on small screens */
+    }
+    
+    .header__navbar-item {
+        margin: 0.5rem 0; /* Add some spacing between navbar items on small screens */
+        padding: 0.5rem 1rem; /* Adjust padding for better touch experience */
+    }
+    
+    /* Add any other responsive styles you need for smaller screens */
+}
