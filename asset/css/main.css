@@ -91,16 +91,26 @@ img{
     
     /* Add any other responsive styles you need for tablets */
 }
+
 /* Add responsive styles for smaller screens like phones */
 @media screen and (max-width: 768px) {
     .header__navbar {
-        flex-direction: column; /* Stack navbar items vertically on small screens */
+        display: none; /* Hide the navigation links by default on small screens */
     }
     
-    .header__navbar-item {
-        margin: 0.5rem 0; /* Add some spacing between navbar items on small screens */
-        padding: 0.5rem 1rem; /* Adjust padding for better touch experience */
+    .menu-button {
+        display: block; /* Show the menu button on small screens */
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
     }
     
-    /* Add any other responsive styles you need for smaller screens */
+    .line {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        margin: 6px auto;
+    }
 }
