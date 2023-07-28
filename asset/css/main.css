@@ -57,3 +57,40 @@ img{
     padding-bottom: 0.2rem;
     color:rgb(27, 78, 230);
 }
+
+/* Add responsive styles for smaller screens like phones */
+@media screen and (max-width: 768px) {
+    img {
+        max-height: 200px; /* Example: reduce image height for smaller screens */
+    }
+    
+    #summary {
+        font-size: 0.9rem; /* Example: adjust font size for smaller screens */
+    }
+    
+    .section-list {
+        padding: 6px 0rem; /* Example: reduce padding for smaller screens */
+    }
+    
+    /* Add any other responsive styles you need for smaller screens */
+}
+
+/* Add responsive styles for tablets and larger screens like iPads */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    img {
+        max-height: 220px; /* Example: adjust image height for tablets */
+    }
+    
+    #summary {
+        font-size: 1rem; /* Example: adjust font size for tablets */
+    }
+    
+    .section-list {
+        padding: 6px 0rem 1rem 1rem; /* Example: adjust padding for tablets */
+    }
+    
+    /* Add any other responsive styles you need for tablets */
+}
+
+/* Add responsive styles for even larger screens (if needed) */
+@media screen and (min-width: 1025px) {
