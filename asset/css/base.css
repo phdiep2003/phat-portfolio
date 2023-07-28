@@ -110,6 +110,38 @@ input[type="submit"] {
 	cursor: pointer;
 }
 
+/* Add responsive styles for smaller screens like phones */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Example: reduce font size for smaller screens */
+    }
+    
+    header {
+        padding: 0.5rem; /* Example: reduce header padding */
+    }
+    
+    /* Add any other responsive styles you need for smaller screens */
+}
+
+/* Add responsive styles for tablets and larger screens like iPads */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px; /* Example: adjust font size for tablets */
+    }
+    
+    /* Add any other responsive styles you need for tablets */
+}
+
+/* Add responsive styles for even larger screens (if needed) */
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 18px; /* Example: adjust font size for larger screens */
+    }
+    
+    /* Add any other responsive styles you need for larger screens */
+}
+
+
 input[type="submit"]:hover {
 	background-color: #666;
 }
