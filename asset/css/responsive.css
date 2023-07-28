@@ -1,1 +1,37 @@
+/* responsive.css */
+
+/* Add styles for smaller screens like phones */
+@media screen and (max-width: 768px) {
+    /* Example: adjust font size */
+    h1 {
+        font-size: 28px;
+    }
+    
+    /* Example: stack navbar items vertically */
+    .header__navbar {
+        flex-direction: column;
+    }
+    
+    /* Add any other responsive styles you need */
+}
+
+/* Add styles for tablets and larger screens like iPads */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Example: adjust font size */
+    h1 {
+        font-size: 36px;
+    }
+    
+    /* Add any other responsive styles you need */
+}
+
+/* Add styles for even larger screens (if needed) */
+@media screen and (min-width: 1025px) {
+    /* Example: adjust font size */
+    h1 {
+        font-size: 48px;
+    }
+    
+    /* Add any other responsive styles you need */
+}
 
