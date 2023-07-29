@@ -58,6 +58,10 @@ img{
     color:rgb(27, 78, 230);
 }
 
+/* main.css */
+
+/* ... Your existing styles ... */
+
 /* Add responsive styles for smaller screens like phones */
 @media screen and (max-width: 768px) {
     .header__navbar {
@@ -78,6 +82,12 @@ img{
         height: 2px;
         background-color: white;
         margin: 6px auto;
+    }
+    
+    /* Show the navigation links when the menu button is clicked */
+    .header__navbar.show-menu {
+        display: flex;
+        flex-direction: column;
     }
 }
 /* Add responsive styles for smaller screens like phones */
