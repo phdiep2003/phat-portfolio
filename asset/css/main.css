@@ -59,9 +59,10 @@ img{
     color:rgb(27, 78, 230);
 }
 
-/* main.css */
-
-/* ... Your existing styles ... */
+#certi{
+    padding-bottom: 0.2rem;
+    color:rgb(27, 78, 230);
+}
 
 /* Add responsive styles for smaller screens like phones */
 @media screen and (max-width: 768px) {
