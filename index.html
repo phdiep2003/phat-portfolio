@@ -1,162 +1,51 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>Phat Henry Diep's Portfolio</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href=asset/css/base.css>
-	<link rel="stylesheet" href=asset/css/main.css>
-	<link rel="stylesheet" href=asset/css/responsive.css> 
+/* responsive.css */
 
-</head>
-<body>
+/* Add styles for smaller screens like phones */
+@media screen and (max-width: 768px) {
+    /* Example: adjust font size */
+    h1 {
+        font-size: calc(1rem - 1px); /* Reduces font size by 1 rem */
+    }
+    
+    /* Example: stack navbar items vertically */
+    .header__navbar {
+        flex-direction: column;
+    }
+    
+    /* Reduce body font size by 1 rem */
+    body {
+        font-size: calc(1rem - 1px);
+    }
+    
+    /* Add any other responsive styles you need */
+}
 
-	<header>
-		<h1>Phat Henry Diep</h1>
-    		<button class="menu-button" aria-label="Toggle Menu">
-        		<span class="line"></span>
-        		<span class="line"></span>
-       			<span class="line"></span>
-    		</button>
+/* Add styles for tablets and larger screens like iPads */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Example: adjust font size */
+    h1 {
+        font-size: calc(1.125rem - 1px); /* Reduces font size by 1 rem */
+    }
+    
+    /* Reduce body font size by 1 rem */
+    body {
+        font-size: calc(1rem - 1px);
+    }
+    
+    /* Add any other responsive styles you need */
+}
 
-		<nav>
-			<ul class=header__navbar>
-				<li><a class=header__navbar-item href="#home"> Home</a></li>
-				<li><a class=header__navbar-item href="#education">Education</a></li>
-				<li><a class=header__navbar-item href="#work">Work Experience</a></li>
-				<li><a class=header__navbar-item href="#certificate">Certificate</a></li>
-				<li><a class=header__navbar-item target="_blank" href="https://www.linkedin.com/in/phat-diep/"> LinkedIn </i></a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<main>
-		<section id="home">
-			<div class="about-me">
-				<img src = asset/media/photo.JPG alt = 'My Photo'>
-				<ul class = 'body__heading-text'>
-					<li><h2 id = 'hello-intro'>- I'm Phat Henry Diep</h2></li>
-					<li><h3 id = 'hello'>Quant Analyst !</h3></li>
-					<li><p id = "summary">Hi, I'm Phat, a rising junior at Carnegie Mellon University. After 2 years of challenging myself with Computer Science @ CMU, I have developed a deep enthusiasm for Quant Finance and have accomplished a good deal of projects. I'm motivated to grow professionally with more experience</p></li>
-					<li> <a class = "certi" href="https://www.linkedin.com/in/phat-diep/" target="_blank"> Connect with me on LinkedIn </a></li>
-					
-				</ul>
-			</div>
-            
-            		<div>
-				<h2>Skills Summary</h2>
-               			<ul>
-                  		  <li>Finance: Options Trading, Time Series, WACC, NPV. Technical Analysis (Use Python to analyze SP500 annual ROI for stocks)</li> 
-		  		  <li>Accounting: Bloomberg (Intermediate). Fundamental Analysis (Use R to train Machine Learning Regression on stocks price-drivers)</li>
-                  		  <li>Data Communication: Python (Intermediate) IBM-SPSS (Intermediate), Microsoft Excel (Proficient), R-Studio (Intermediate)</li>
-                  		  <li>Math: Linear Programming Optimization, Process Flexibility with Stochastic Demand</li>
-                  		  <li>Languages: English (Proficient), Vietnamese (Native)</li>
-               			 </ul>
-            		</div>
-			
-		</section>
-
-		<section id="education">
-			<div class = 'education'> 
-				<h2>Education</h2>
-				<h3> Carnegie Mellon University (2021-present) </h3>
-				<ul class="section-list">
-					<li>Class of 2025 - Finance - Quant</li>
-					<li>GPA: 3.86</li>
-					<li>Dean's List Spring 2022, Fall 2022, Spring 2023 </li>
-				</ul>
-				<h3> Courses Taken </h3>
-				<ul class="section-list">
-					<li><a>Microeconomic, Accounting, Finance, Marketing, Operation Management</a></li>
-					<li><a>Python Object Oriented Programming </a></li>
-					<li><a>Regression Analysis, Doha Real Estate Statistics</a></li>
-					<li><a>Calculus 1,2,3 </a></li>
-				</ul>
-			</div>
-			
-		</section>
-
-		<section id="work">
-			<h2>Working Experience</h2>
-            		<div class = 'working'>
-		    		<h3 class = "title work">CMU – Course Assistant | Intro to Accounting and Multivariate Analysis</h3>
-		<h3 class = "date work">Aug 2023-Present</h3>
-		    	</div>
-		    <ul class="section-list">
-				<li>Hold office hour for students in accounting basics, partial derivatives, multi-integrals, and Lagrangian to solve applied Linear Programming optimization problems. </li>
-			</ul>
-            
-            		<div class = 'working'>
-		    		<h3 class = "title work">CMU - Volunteer | Alice Programming and Pi Mathematical Competition</h3>
-		    <h3 class = "date work">May - Jun 2023</h3>
-            		</div>
-			<div class = 'working'>
-				<h3 class = "title work">Coca-Cola - FIFA Intern - Logistic | Sales</h3>
-            	<h3 class = "date work">Oct 2022 - Dec 2022</h3>
-
-			</div>
-			<ul class="section-list">
-				<li>Recorded beginning inventory and ending inventory balance in Excel (VBA, Vlookup, pivot table)</li>
-				<li>Supervised inventory check by FIFO accounting principle</li>
-				<li>Ordered stocks from Coca-Cola Warehouse</li>
-			</ul>
-
-			<div class = 'working'>
-				<h3 class = "title work">VELA Academy - Marketing | Counselor | Teacher</h3>
-            	<h3 class = "date work">Jan 2021 - Jan 2023</h3>
-
-			</div>
-			<ul class="section-list">
-				<li>Upgraded vela-academy.com using HTML and CSS, boost monthly visits by over 100 clicks</li>
-				<li>Taught IELTS for 2 year with a total of 70 students</li>
-				<li>Launched a sales campaign in May 2021, attract 60 new students, 2021 sales revenue to be as 160%</li>
-			</ul>
-			<div class = 'working'>
-				<h3 class = "title work">Shark-Entrepreneur Club | Former President & Current Mentor</h3>
-            	<h3 class = "date work">Jan 2021 - Jan 2023</h3>
-			</div>
-			<ul class="section-list">
-				<li>Organized Workshop Sharkon sharing financial knowledge for 30 high school students for free with professional financial employer Tran Vo Thanh Tu (former HSBC Business Case Champion).</li>
-				<li>Organized Workshop Create Your Own. Invited 2 guest speakers experienced in building start-ups.</li>
-				<li>Presided Shark Club to achieve 2000 followers on Facebook sharing Business - Economics knowledge.</li>
-				<li>Advised for the 2022 PERFIN workshop for Personal Finance.</li>
-			</ul>
-		</section>
-
-		<section id="certificate">
-			<h2>Certificate</h2>
-			<div class = 'certificate'>
-				<div class = 'working'>
-					<h3><a class = "certi" href="https://drive.google.com/file/d/1jxrZNnlkJlyzBcaeTD0vBSNmDP7aAYw4/view?usp=sharing" target="_blank">Advance Your Python Skills for Data Science (LinkedIn)</a></h3>
-					<h3 class = "date work">Jul 2022</h3>
-				</div>
-				<li>Big Data, Python (Programming Language), Object-Oriented Programming (OOP)</li>
-			</div>
-
-			<div class = 'certificate'>
-				<div class = 'working'>
-					<h3><a class = "certi" href="https://drive.google.com/file/d/1Dn3aEyGkB9P0pGOiN3TqT3Ba6xGFTYwH/view" target="_blank">Financial Analyst LinkedIn Learning Path (LinkedIn)</a></h3>
-					<h3 class = "date work">Nov 2011</h3>
-				</div>
-				<li>Strategic Planning, Corporate Finance, Financial Modeling, Financial Accounting, Financial Analysis, Financial Statement Analysis, Microsoft Excel</li>
-			</div>
-			<div class = 'certificate'>
-				<div class = 'working'>
-					<h3><a class = "certi" href="https://portal.bloombergforeducation.com/certificates/EmHkZ7wM4zw51zwXGebps6nn" target="_blank">Bloomberg Market Concepts (BMC)</a></h3>
-					<h3 class = "date work">Oct 2011</h3>
-				</div>
-				<li>Economic Indicators, Currencies, Fixed Income, and Equities</li>
-			</div>
-
-	</main>
-	<script>
-        // JavaScript to toggle the menu on small screens
-        	const menuButton = document.querySelector('.menu-button');
-        	const headerNavbar = document.querySelector('.header__navbar');
-
-        	menuButton.addEventListener('click', function () {
-            		headerNavbar.classList.toggle('show-menu');
-       		});
-    	</script>
-</body>
-</html>
+/* Add styles for even larger screens (if needed) */
+@media screen and (min-width: 1025px) {
+    /* Example: adjust font size */
+    h1 {
+        font-size: calc(1.5rem - 1px); /* Reduces font size by 1 rem */
+    }
+    
+    /* Reduce body font size by 1 rem */
+    body {
+        font-size: calc(1rem - 1px);
+    }
+    
+    /* Add any other responsive styles you need */
+}
