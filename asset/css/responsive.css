@@ -12,6 +12,11 @@
         flex-direction: column;
     }
     
+    /* Reduce body font size by 1 rem */
+    body {
+        font-size: calc(1rem - 1px);
+    }
+    
     /* Add any other responsive styles you need */
 }
 
@@ -22,6 +27,11 @@
         font-size: calc(1.125rem - 1px); /* Reduces font size by 1 rem */
     }
     
+    /* Reduce body font size by 1 rem */
+    body {
+        font-size: calc(1rem - 1px);
+    }
+    
     /* Add any other responsive styles you need */
 }
 
@@ -30,6 +40,11 @@
     /* Example: adjust font size */
     h1 {
         font-size: calc(1.5rem - 1px); /* Reduces font size by 1 rem */
+    }
+    
+    /* Reduce body font size by 1 rem */
+    body {
+        font-size: calc(1rem - 1px);
     }
     
     /* Add any other responsive styles you need */
