@@ -1,5 +1,12 @@
 /* responsive.css */
-
+/* Add styles for smaller screens like phones */
+@media screen and (max-width: 768px) {
+    .about-me {
+        display: block; /* Change to block layout on small screens */
+    }
+    
+    /* Add any other responsive styles you need */
+}
 /* Add styles for smaller screens like phones */
 @media screen and (max-width: 768px) {
     /* Example: adjust font size */
