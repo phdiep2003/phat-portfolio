@@ -4,7 +4,7 @@
 @media screen and (max-width: 768px) {
     /* Example: adjust font size */
     h1 {
-        font-size: 28px;
+        font-size: calc(1rem - 1px); /* Reduces font size by 1 rem */
     }
     
     /* Example: stack navbar items vertically */
@@ -19,7 +19,7 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Example: adjust font size */
     h1 {
-        font-size: 36px;
+        font-size: calc(1.125rem - 1px); /* Reduces font size by 1 rem */
     }
     
     /* Add any other responsive styles you need */
@@ -29,7 +29,7 @@
 @media screen and (min-width: 1025px) {
     /* Example: adjust font size */
     h1 {
-        font-size: 48px;
+        font-size: calc(1.5rem - 1px); /* Reduces font size by 1 rem */
     }
     
     /* Add any other responsive styles you need */
