@@ -20,7 +20,7 @@
     }
     
     /* Reduce body font size by 1 rem */
-    body {
+    main {
         font-size: calc(1rem - 1px);
     }
     
@@ -35,7 +35,7 @@
     }
     
     /* Reduce body font size by 1 rem */
-    body {
+    main {
         font-size: calc(1rem - 1px);
     }
     
@@ -50,7 +50,7 @@
     }
     
     /* Reduce body font size by 1 rem */
-    body {
+    main {
         font-size: calc(1rem - 1px);
     }
     
