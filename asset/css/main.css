@@ -53,7 +53,10 @@ img{
 .certificate {
     padding-bottom: 1rem;
 }
-
+.title{
+    font-size: 0.9rem;
+    font-weight: normal;
+}
 .certi{
     padding-bottom: 0.2rem;
     color:rgb(27, 78, 230);
