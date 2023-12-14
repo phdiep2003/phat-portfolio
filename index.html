@@ -11,14 +11,13 @@
 
 </head>
 <body>
-
 	<header>
 		<h1>Phat Henry Diep</h1>
-    		<button class="menu-button" aria-label="Toggle Menu">
+    		<!-- <button class="menu-button" aria-label="Toggle Menu">
         		<span class="line"></span>
         		<span class="line"></span>
        			<span class="line"></span>
-    		</button>
+    		</button> -->
 
 		<nav>
 			<ul class=header__navbar>
@@ -34,112 +33,117 @@
 	<main>
 		<section id="home">
 			<div class="about-me">
-				<img src = asset/media/photo.JPG alt = 'My Photo'>
+				<img class = "home-img" src = asset/media/photo.JPG alt = 'My Photo'>
 				<ul class = 'body__heading-text'>
-					<li><h2 id = 'hello-intro'>- I'm Phat Henry Diep</h2></li>
-					<li><h3 id = 'hello'>Quant Analyst !</h3></li>
-					<li><p id = "summary">Hi, I'm Phat, a rising junior at Carnegie Mellon University. After 2 years of challenging myself with Computer Science @ CMU, I have developed a deep enthusiasm for Quant Finance and have accomplished a good deal of projects. I'm motivated to grow professionally with more experience</p></li>
+					<li><h2>- I'm Phat Henry Diep</h2></li>
+					<li><h3>Quant Analyst !</h3></li>
+					<li><p id = "summary">Hi, I'm Phat, a rising junior at Carnegie Mellon University. After 2 years of challenging myself with Computer Science @ CMU, I have developed a deep enthusiasm for Quant Finance and have accomplished a good deal of projects. I'm motivated to grow professionally with more experience.</p></li>
 					<li> <a class = "certi" href="https://www.linkedin.com/in/phat-diep/" target="_blank"> Connect with me on LinkedIn </a></li>
-
 				</ul>
 			</div>
+			<h2>Skills Summary</h2>
+			<ul>
+				<li>Finance: Options Trading, Time Series, WACC, NPV, M&A, Technical Analysis.</li> 
+				<li>Accounting: Bloomberg, SAP, Fundamental Analysis (Profitability, Turnover, Liquidity, Solvency, Pricing). </li>
+				<li>Data Communication: Microsoft Excel (top skill), Python, R-Studio, IBM-SPSS, Tableau. </li>
+				<li>Programming Language: Python, C, HTML & CSS.</li>
+				<!-- <li>Math: Linear Programming Optimization, Process Flexibility with Stochastic Demand. </li> -->
+			</ul>
 
 		</section>
-<!-- 		<section id="education">
-    			<div class="education">
-        			<h2>Education</h2>
-        			<h3>Carnegie Mellon University (2021-present)</h3>
-        			<ul class="section-list">
-            				<li>Class of 2025 - Finance - Quant</li>
-            				<li>GPA: 3.86</li>
-            				<li>Dean's List Spring 2023, Fall 2022, Spring 2022</li>
-        			</ul>
-        			<h3>Courses Taken</h3>
-        			<ul class="section-list">
-            				<li><a>Microeconomic, Accounting, Finance, Marketing, Operation Management</a></li>
-            				<li><a>Python Object Oriented Programming</a></li>
-            				<li><a>Regression Analysis, Doha Real Estate Statistics</a></li>
-           				<li><a>Calculus 1,2,3</a></li>
-         				</ul>
-    			</div>
-		</section> -->
-
-
 		<section id="education">
 			<div class = 'education'> 
 				<h2>Education</h2>
-				<h3> Carnegie Mellon University | 2021 - Expected Graduation 2025 </h3>
+				<h3> Carnegie Mellon University - Expected Graduation 2025 </h3>
 				<ul class="section-list">
-					<li> B.S. Business Administration - GPA: 3.86/4 </li>
-					<li> Concentration: Quantitative - Finance  Minor: Computer Science</li>
-					<li> Dean's List: Spring 2022, Fall 2022, Spring 2023 </li>
+					<li> B.S. Business Administration - GPA: 3.86/4.0 </li>
+					<li> Concentration: Finance (Quantitative)  Minor: Computer Science</li>
+					<li> Dean's List: Spring - Fall 2022, Spring - Fall 2023 </li>
+					<li> Certificates: Bloomberg Market Concepts, LinkedIn Advance Your Python Skills for Data Science, LinkedIn Financial
+Analyst LinkedIn Learning Path, SAP4HANA (pursuing), CMUQ’s AI & Finance (pursuing)</li>
 				</ul>
+				<!-- <h3>Courses Taken</h3>
+        		<ul class="section-list">
+            			<li><a>Corporate Finance, Microeconomic, Accounting, Marketing, Operation Management</a></li>
+            			<li><a>Python Object Oriented Programming</a></li>
+            			<li><a>Regression Analysis, Doha Real Estate Statistics</a></li>
+           			<li><a>Calculus 1,2,3</a></li>
+         		</ul> -->
 				<h3> Courses Skills </h3>
+				<h4> Finance </h4>
 				<ul class="section-list">
-					<li><a>Constructed discounted models for AMZN in 2022, affirming strategic divestment from overvalued AMZN stock</a></li>
-                			<li><a>Developed 3-Statement Financial Model AMZN (2021-2025) in Excel, projecting tax shield through capital structure</a></li>
-					<li><a>Built data scraping API in Python, retrieving SP500 latest data from yahoo finance </a></li>
-					<li><a>Conducted fundamental analysis with NumPy and Plotly, making financial ratios and charts visualization</a></li>
-					<li><a>Valuated profitability with discounted model, identifying cheap, low-risk, high-return securities </a></li>
-					<li><a>Analyzed put and covered call options with Theta-decay method in Python, creating reports in LaTeX </a></li>
+					<li>Built 3-Statement Financial Models 5 years into the future, adjusting for free cash flow growth.</li>
+					<li>Constructed NPV and Scenario Analysis models in Excel, visualizing football fields for share price.</li>
+					<li>Valuated financial distress companies with Black Scholes options pricing, calculating survival rate and call option value.</li>
+					<li>Optimized capital structure through tax shield, levering beta and asset for DCF model.</li>
+					<li>Analyzed cases of Mergers and Acquisitions with synergies, recommending bidding strategies for acquirers.  </li>
+				</ul>
+				<img class="gallery" src="asset\media\valuation.png" alt ="Valuation.png">
+				<h4> Data Science and Programming </h4>
+				<ul class="section-list">
+					<li>Built Machine Learning Algorithm for valuating any S&P500 companies, exporting to reports in Excel.</li>        
+					<li>Ensembled decision trees and log-regression model in Python, classifying credit score for Bank's data. </li>   
+					<li>Conducted EDA and Fundamental Analysis on S&P500 and S&P400 in Tableau, identifying cheap and profitable shares.</li> 
+				</ul>
+				<img class="gallery" src="asset/media/data.png" alt ="Data-financial.png">
+				<h4>Business Communication</h4>
+				<ul class="section-list">
+					<li>Conceptualized a hedge fund company, designing corporate strategies for 10-year expansion. </li>
+					<li>Built a marketing website using communication planning tools, writing SEO content for customers driver. </li>   
+				</ul>
+				<a href="https://phdiep2003.github.io/QHedge.github.io/" target="#"><img class="gallery" src="asset\media\website.png" alt ="Business-communication.png"></a>
+				<h3> Research Skills </h3>
+				<div class = 'working'>
+					<h3 class = "title work"><strong>Carnegie Mellon's Independent Study</strong> - Quantitative Finance - Extracurricular</h3>
+					<h3 class = "date work">May 2023 - Present</h3>
+				</div>
+				  <li>Built an API in Python, scraping S&P500 latest options data from Yahoo Finance daily for 3 months.</li>
+				  <li>Conducted fundamental analysis for S&P500 in R, extracting a portfolio of 10 bullish stocks.</li>
+				  <li>Identified overvalued/undervalued securities with NumPy and Plotly for data manipulation and visualization.</li>
+				  <li>Applied Black Scholes model for volatility, acquiring implied price for top 10 strikes.</li>
+				  <li>Analyzed put options with Theta-decay method in Python, learning long & short positions.</li>
+				  <li>Optimized return on risk-averse cash secured put options, generating comprehensive reports reports in LaTeX.</li>
 				</ul>
 			</div>
 
 		</section>
-
 		<section id="work">
-    			<h2>Professional Experience</h2>
-
-    			<h3>Finance</h3>
-    			<ul class="section-list">
-        			<li>Built working capital, debt schedule, depreciation models, achieving 78% accuracy in cost of capital for the REIT industry</li>
-        			<li>Identified asset pricing in Bloomberg, adjusting projections monthly for time series valuation (WACC, NPV)</li>
-        			<li>Made structured analysis for strategic financial decisions for 20 business cases, including mergers and acquisitions</li>
-    			</ul>
-
-    			<h3>Marketing and Communication</h3>
-    			<ul class="section-list">
-        			<li>Upgraded website with HTML and CSS, enhancing company image and increasing monthly visits by over 100%</li>
-        			<li>Conducted Coca-Cola marketing research by conjoint analysis, suggesting water industry growth signal</li>
-        			<li>Led successful on-field sales campaigns, acquiring 60 new customers in the same quarter</li>
-        			<li>Instructed IELTS for 2 years, helping a total of 70 students familiarize themselves with new concepts</li>
-    			</ul>
-
-    			<h3>Math & Accounting</h3>
-    			<ul class="section-list">
-        			<li>Founded Carnegie Math Club, gaining over 100 followers on Instagram after a successful club fair</li>
-       				<li>Managed FIFO inventory in Excel with Vlookup and pivot tables, reducing slow-moving stock by 25%</li>
-        			<li>Guided students in homework and assignments, refining financial ratios model</li>
-    			</ul>
-
-    			<h2>Work History</h2>
+    		<h2>Work History</h2>
 			<div class = 'working'>
-				<h3 class = "title work"><strong>Carnegie Mellon University</strong> – Course Assistant | Qatar</h3>
+				<h3 class = "title work"><strong>Carnegie Mellon University </strong> - Accounting & Calculus 3 – Course Assistant | Qatar</h3>
 				<h3 class = "date work">Aug 2023 - Present</h3>
 			</div>
+    		<ul class="section-list">
+        		<li> Supported in financial ratios project, offering measurements to capture profitability, capital structure, and liquidity.</li>
+        		<li> Assisted students with Bloomberg’s relative valuation, matching target company with industry mean and median.</li>
+        		<li> Tutored students on bond pricing, inventory & depreciation method, providing glossaries for liquidity and profitability.</li>
+				<li> Provided balance sheet problems with adjusting entries, gaining deep insights into accounting financial models.</li>
+				<li> Proctored problem sets for derivative & integral in 3D, offering visualizing tools and methods for students.</li>
+    		</ul>
+
 			<div class = 'working'>
-				<h3 class = "title work"><strong>VELA Academy</strong> - Part Time Marketing - Teacher | Vietnam </h3>
-				<h3 class = "date work">2021 – 2023</h3>
+				<h3 class = "title work"><strong>VELA Academy </strong> - Part Time Marketing - Teacher | Vietnam </h3>
+				<h3 class = "date work">Jan 2021 – Jan 2023</h3>
 			</div>
+			<ul class="section-list">
+        		<li> Upgraded website with HTML and CSS, leveraging company image and increasing monthly visits by nearly 100%.</li>
+        		<li> Instructed IELTS for 2 years, helping a total of 70 students familiarize with formal writings and academic readings.</li>
+        		<li> Led on-field sales campaigns in high schools, acquiring 60 new customers in the same quarter.</li>				
+    		</ul>
 			<div class = 'working'>
-				<h3 class = "title work"><strong>Coca-Cola</strong> - FIFA Intern – Audit | Qatar</h3>
+				<h3 class = "title work"><strong>Coca-Cola </strong> - FIFA Intern – Audit | Qatar</h3>
 				<h3 class = "date work">Oct - Dec 2022</h3>
 			</div>
-<!-- 			<div>
-				<h2>Skills Summary</h2>
-               			<ul>
-                  		  <li>Finance: Options Trading, Time Series, WACC, NPV. Technical Analysis (Use Python to analyze SP500 annual ROI for stocks)</li> 
-		  		  <li>Accounting: Bloomberg (Intermediate). Fundamental Analysis (Use R to train Machine Learning Regression on stocks price-drivers)</li>
-                  		  <li>Data Communication: Python (Intermediate) IBM-SPSS (Intermediate), Microsoft Excel (Proficient), R-Studio (Intermediate)</li>
-                  		  <li>Math: Linear Programming Optimization, Process Flexibility with Stochastic Demand</li>
-                  		  <li>Languages: English (Proficient), Vietnamese (Native)</li>
-               			 </ul>
-            		</div> -->
+			<ul class="section-list">
+        		<li> Managed FIFO inventory in Excel with Vlookup, pivot tables, reducing slow-moving stock by 25%.</li>
+        		<li> Managed team workflow and operation, offering dynamic event organization management for over 200 attendees.</li>
+    		</ul>
+
     			<h2>Extracurricular Activities</h2>
    			<ul class="section-list">
-        			<li>Founded Carnegie Math Club, attracting over 50 attendees during Club Fair</li>
-        			<li>Joined PwC mentorship program and research in Quantitative Finance, maintaining strong academic performance</li>
-        			<li>Volunteered in Alice Programming and Math Pi Competition, refining communicative skills</li>
+        			<li>Founded Carnegie Math Club, attracting over 30 attendees in Math Career and 7 Millenials Problems event. </li>
+        			<li>Joined PwC mentorship program and research in Quantitative Finance, maintaining strong academic performance.</li>
+        			<li>Volunteered in Alice Programming and Math Pi Competition, refining communication and event organizational skills.</li>
     			</ul>
 		</section>
 
