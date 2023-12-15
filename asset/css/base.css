@@ -4,22 +4,28 @@
 	--text-color:white;
 	--cmu-color:rgb(176, 28, 51)
 }
+.main{
+	margin-top: 10em;
+}
 
 body {
 	font-family: Arial, sans-serif;
-    
     background-color: #333333;
 	margin: 0;
 	padding: 0;
 }
 
 header {
+	min-width: 100%;
+	margin-top: 0;
+	padding: 20px 0 20px 0;
+	transform: translate(0px, -25px);
 	background-color:var(--cmu-color);
 	color: var(--text-color);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 1rem;
+	position: fixed;
 }
 
 nav {
