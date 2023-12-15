@@ -11,14 +11,14 @@
 </head>
 <body>
 	<header>
-		<h1>Phat Henry Diep</h1>
-    		<!-- <button class="menu-button" aria-label="Toggle Menu">
-        		<span class="line"></span>
-        		<span class="line"></span>
-       			<span class="line"></span>
-    		</button> -->
+    	<button class="menu-button" aria-label="Toggle Menu">
+        	<span class="line"></span>
+        	<span class="line"></span>
+       		<span class="line"></span>
+    	</button>
 
 		<nav>
+			<a href="#about-me"><h1>Phat Henry Diep</h1></a>
 			<ul class=header__navbar>
 				<li><a class=header__navbar-item href="#about-me"> About me</a></li>
 				<li><a class=header__navbar-item href="#education">Education</a></li>
@@ -30,7 +30,7 @@
 	</header>
 
 	<main class="main">
-		<section id="home">
+		<section id="about-me">
 			<div class="about-me">
 				<img class = "home-img" src = asset/media/photo.JPG alt = 'My Photo'>
 				<ul class = 'body__heading-text'>
@@ -70,14 +70,20 @@ Analyst LinkedIn Learning Path, SAP4HANA (pursuing), CMUQ’s AI & Finance (purs
          		</ul> -->
 				<h3> Courses Skills </h3>
 				<h4> Finance </h4>
-				<ul class="section-list">
-					<li>Built 3-Statement Financial Models 5 years into the future, adjusting for free cash flow growth.</li>
-					<li>Constructed NPV and Scenario Analysis models in Excel, visualizing football fields for share price.</li>
-					<li>Valuated financial distress companies with Black Scholes options pricing, calculating survival rate and call option value.</li>
-					<li>Optimized capital structure through tax shield, levering beta and asset for DCF model.</li>
-					<li>Analyzed cases of Mergers and Acquisitions with synergies, recommending bidding strategies for acquirers.  </li>
-				</ul>
-				<img class="gallery" src="asset\media\valuation.png" alt ="Valuation.png">
+				<div class="content">
+					<div class="text">
+						<ul class="section-list">
+							<li>Built 3-Statement Financial Models 5 years into the future, adjusting for free cash flow growth.</li>
+							<li>Constructed NPV and Scenario Analysis models in Excel, visualizing football fields for share price.</li>
+							<li>Valuated financial distress companies with Black Scholes options pricing, calculating survival rate and call option value.</li>
+							<li>Optimized capital structure through tax shield, levering beta and asset for DCF model.</li>
+							<li>Analyzed cases of Mergers and Acquisitions with synergies, recommending bidding strategies for acquirers.</li>
+						</ul>
+					</div>
+					<div class="image">
+						<img class="gallery" src="asset\media\valuation.png" alt="Valuation.png">
+					</div>
+				</div>				
 				<h4> Data Science and Programming </h4>
 				<ul class="section-list">
 					<li>Built Machine Learning Algorithm for valuating any S&P500 companies, exporting to reports in Excel.</li>        
@@ -96,6 +102,7 @@ Analyst LinkedIn Learning Path, SAP4HANA (pursuing), CMUQ’s AI & Finance (purs
 					<h3 class = "title work"><strong>Carnegie Mellon's Independent Study</strong> - Quantitative Finance - Extracurricular</h3>
 					<h3 class = "date work">May 2023 - Present</h3>
 				</div>
+				<ul class="section-list">
 				  <li>Built an API in Python, scraping S&P500 latest options data from Yahoo Finance daily for 3 months.</li>
 				  <li>Conducted fundamental analysis for S&P500 in R, extracting a portfolio of 10 bullish stocks.</li>
 				  <li>Identified overvalued/undervalued securities with NumPy and Plotly for data manipulation and visualization.</li>
