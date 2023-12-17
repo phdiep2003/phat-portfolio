@@ -7,14 +7,14 @@
         order: -1; /* Move the image above the text on smaller screens */
     }
     .home-img{
-        max-width: 100%; /* Set the image width to match the width of the phone */
+        width: 100%; /* Set the image width to match the width of the phone */
     }
 
     .gallery {
         max-width: 100%; /* Set the image width to match the width of the phone */
     }
     .section-list{
-        padding:0xp;
+        padding:0px;
     }
     .header {
         display: none; /* hide the header on smaller screens */
