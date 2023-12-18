@@ -8,6 +8,7 @@
     }
     .home-img{
         width: 100%; /* Set the image width to match the width of the phone */
+        max-height:auto;
     }
 
     .gallery {
@@ -16,7 +17,7 @@
     .section-list{
         padding:0px;
     }
-    .header {
-        display: none; /* hide the header on smaller screens */
+    header{
+        display: none !important; /* hide the header on smaller screens */
     }
 }
