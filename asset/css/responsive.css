@@ -2,14 +2,20 @@
     .content {
         flex-direction: column; /* Stack elements vertically on smaller screens */
     }
-
+    .about-me {
+        flex-direction: column;
+        flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    }
+    .body__heading-text{
+        padding: 0px;
+    }
     .image {
         order: -1; /* Move the image above the text on smaller screens */
     }
     .home-img{
         width: 100%;
-        height: auto;
-        max-height:none;
+        height: 100%;
+        /* max-height:none; */
     }
 
     .gallery {

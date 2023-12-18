@@ -25,11 +25,9 @@
     list-style: none;
 }
 
-
 /* Home */
 .about-me{
     display: flex;
-    justify-content: space-between;
 }
 
 .home-img{
