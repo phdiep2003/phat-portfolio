@@ -8,13 +8,14 @@
     }
     .home-img{
         width: 100%; /* Set the image width to match the width of the phone */
-        max-height:auto;
+        max-height:none;
     }
 
     .gallery {
         max-width: 100%; /* Set the image width to match the width of the phone */
     }
     .section-list{
+        list-style: none;
         padding:0px;
     }
     .header__navbar{
