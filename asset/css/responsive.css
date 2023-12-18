@@ -1,4 +1,4 @@
-@media (max-width: 1284px) {
+@media (max-width: 768px) {
     .content {
         flex-direction: column; /* Stack elements vertically on smaller screens */
     }
