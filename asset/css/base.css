@@ -15,7 +15,7 @@ html {
 
 body {
 	font-family: Arial, sans-serif;
-    background-color: #bbbbbb;
+    background-color: #f9f9f9;
 	margin: 0;
 	padding: 0;
 }
@@ -32,11 +32,24 @@ nav {
 	padding: 10px 0px 40px 0px;
 }
 
+button{
+	font-weight: bold;
+	background-color: var(--cmu-color);
+	color: white;
+	padding: 10px;
+	margin-top:5px;
+	border: none;
+	display: flex;
+	cursor: pointer;
+}
+
+
 nav h1{
 	text-align: center;
 }
 
 nav ul {
+	font-weight: bold;
 	display: flex;
 	justify-content: center;
 	list-style: none;

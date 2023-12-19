@@ -1,5 +1,6 @@
 /* Header (nav-bar) */
 .header__navbar-top{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:white;
 }
 .header__navbar {
@@ -35,7 +36,7 @@
 
 .home-img{
     max-height:250px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 #summary{
