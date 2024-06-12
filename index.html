@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="asset/media/Phat.png">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/"></script>
 	<link rel="stylesheet" href=asset/css/base.css>
 	<link rel="stylesheet" href=asset/css/main.css>
 	<link rel="stylesheet" href=asset/css/responsive.css> 
@@ -58,22 +59,17 @@
 				</ul>
 				<h3> Courses Skills </h3>
 				<h4> Finance </h4>
-				<div class="content">
-					<div class="text">
-						<ul class="section-list">
-							<li>Constructed Fama & French 5-factor Model in Python, capturing cumulative abnormal return with event studies.</li>
-							<li>Managed an active portfolio of Large Growth Equities on simulated software, yielding 14% return p.a.</li>
-							<li>Built 3-Statement & DCF Models in Excel, adjusting for WACC and Free Cash Flow volatility in Scenario Analysis.</li>
-							<li>Solved Mergers and Acquisitions cases for Startups, recommending Leveraged Buy Out and bidding strategies.</li>
-							<li>Valuated financial distressed companies with Black Scholes Options pricing in VBA, exporting to Call option prices.</li>
-							<li>Optimized capital structure through tax shield, levering beta and asset for DCF model.</li>
-							<li>Analyzed cases of Mergers and Acquisitions with synergies, recommending bidding strategies for acquirers.</li>
-						</ul>
-					</div>
-					<div class="image">
-						<img class="gallery" src="asset\media\valuation.png" alt="Valuation.png">
-					</div>
-				</div>				
+				<ul class="section-list">
+					<li>Constructed Fama & French 5-factor Model in Python, capturing cumulative abnormal return with event studies.</li>
+					<li>Managed an active portfolio of Large Growth Equities on simulated software, yielding 14% return p.a.</li>
+					<li>Built 3-Statement & DCF Models in Excel, adjusting for WACC and Free Cash Flow volatility in Scenario Analysis.</li>
+					<li>Solved Mergers and Acquisitions cases for Startups, recommending Leveraged Buy Out and bidding strategies.</li>
+					<li>Valuated financial distressed companies with Black Scholes Options pricing in VBA, exporting to Call option prices.</li>
+					<li>Optimized capital structure through tax shield, levering beta and asset for DCF model.</li>
+					<li>Analyzed cases of Mergers and Acquisitions with synergies, recommending bidding strategies for acquirers.</li>
+				</ul>
+				<canvas id = "cookieChart" width="250" height = "200"></canvas>
+				<script src = "scripts.js"></script>
 				<h4> Data Science and Programming </h4>
 				<ul class="section-list">
 					<li>Built Machine Learning Algorithm for valuating any S&P500 companies, exporting to reports in Excel.</li>        
