@@ -9,4 +9,3 @@ var config =  {
 };
 
 var cookieChart = new Chart (canvasElement,config);
-
