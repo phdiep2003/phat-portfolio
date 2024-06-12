@@ -45,12 +45,11 @@
     justify-content: center;
     line-height: 1.5rem;
 }
-
 /* Education */
 
-#education,#work{
+/* #education,#work{
     padding-top: 1rem;
-}
+} */
 
 .section-list{
     font-size: 0.9rem;
