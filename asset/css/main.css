@@ -2,10 +2,11 @@
 
 .navbar {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding:0;
     --bs-navbar-brand-font-size:1.5rem;
     --bs-navbar-brand-color:white;
     --bs-navbar-nav-link-padding-x:2rem;
+    line-height: 2rem;
+    padding:0;
 }
 .container-fluid {  
     display:flex !important;
@@ -23,6 +24,8 @@
     justify-content: space-evenly;
     --bs-nav-link-color:white;
     --bs-nav-link-hover-color:rgba(255,255,255,0.5);
+    /* line-height: 3rem; */
+    /* margin-bottom: 2rem; */
 }
 /* .header__navbar-top{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -108,7 +111,7 @@
 	cursor: pointer;
     --bs-btn-hover-border-color: rgba(255,255,255,0.5);
     --bs-btn-hover-bg: var(--cmu-color);
-} */
+} 
 /* Education */
 
 /* #education,#work{

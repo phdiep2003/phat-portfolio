@@ -1,72 +1,88 @@
-@media (max-width: 768px) {
-    .header__navbar {
-        flex-direction: column;
-        align-items: center;
-    }
+    /* @media (max-width: 768px) {
+        .header__navbar {
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .header__navbar-item {
-        width: auto;
-        padding: 10px 0;
-    }
+        .header__navbar-item {
+            width: auto;
+            padding: 10px 0;
+        }
 
-    .navbar-toggle-label {
-        display: block;
-        font-size: 1.5em;
-        color: white;
-        position: absolute;
-        top: 0;
-        right: 10px;
-    }
+        .navbar-toggle-label {
+            display: block;
+            font-size: 1.5em;
+            color: white;
+            position: absolute;
+            top: 0;
+            right: 10px;
+        }
 
-    .navbar-toggle:checked ~ #navbar {
-        display: block;
-    }
+        .navbar-toggle:checked ~ #navbar {
+            display: block;
+        }
 
-    .header__navbar-dropdown {
-        position: static;
-        width: 100%;
-        text-align: center;
-    }
+        .header__navbar-dropdown {
+            position: static;
+            width: 100%;
+            text-align: center;
+        }
 
-    .header__navbar-dropdown-content {
-        position: static;
-        display: none;
-        width: 100%;
-        text-align: center;
-    }
+        .header__navbar-dropdown-content {
+            position: static;
+            display: none;
+            width: 100%;
+            text-align: center;
+        }
 
-    .header__navbar-dropdown:hover .header__navbar-dropdown-content {
-        display: block;
-    }
-}
+        .header__navbar-dropdown:hover .header__navbar-dropdown-content {
+            display: block;
+        }
+    } */
 
 
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
-    }
-    .about-me {
-        flex-direction: column;
-        flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
-    }
-    .body__heading-text{
-        padding: 0px;
-    }
-    .img-fluid{
-        max-width: 100%;
-        height: 100%;
-        max-height:none;
-        padding-bottom: 10px;
-    } 
+    @media (max-width: 768px) {
+        .navbar{
+            --bs-navbar-brand-padding-y: 40px;
+            --bs-navbar-brand-font-size: 0.975rem;
+            /* line-height: 3rem; */
+        }
 
-    .gallery {
-        max-width: 100%; /* Set the image width to match the width of the phone */
+        .container-fluid {  
+            flex-direction: row;
+        }
+
+        .main {
+            flex-direction: column; 
+            font-size:0.9rem;
+            text-align:justify;
+        }
+        .about-me {
+            flex-direction: column;
+            flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+            justify-content: center;
+        }
+        ul {
+            padding-inline-start: 13px;
+        }
+        .body__heading-text{
+            padding: 0px;
+        }
+        .img-fluid{ 
+            max-width: 100%;
+            height: 100%;
+            max-height:none;
+            padding-bottom: 10px;
+        } 
+
+        .gallery {
+            max-width: 100%; /* Set the image width to match the width of the phone */
+        }
+        .section-list{
+            list-style: none;
+            padding:0px;
+        }
+        .header__navbar{
+            display: none !important; /* hide the header on smaller screens */
+        }
     }
-    .section-list{
-        list-style: none;
-        padding:0px;
-    }
-    .header__navbar{
-        display: none !important; /* hide the header on smaller screens */
-    }
-}

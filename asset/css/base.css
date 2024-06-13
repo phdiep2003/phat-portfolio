@@ -2,16 +2,18 @@
 html {
 	scroll-behavior: smooth;
 	scroll-padding-top: 8.5rem;
-  }
-  
+}
+
+header {
+	height: 8rem; /* set the height of the header to 100 pixels */
+}  
+
 *{
 	font-size: 1rem 0;
 	--text-color:#000!important;
 	--cmu-color:rgb(176, 28, 51)!important;
 }
-.main{
-	margin-top: 7em;
-}
+
 
 body {
 	font-family: Arial, sans-serif;
@@ -49,6 +51,16 @@ h4{
 	margin: 0.3rem 0rem;
 }
 
+/* ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 25px;
+    unicode-bidi: isolate;
+} */
 
 
 /* form {
