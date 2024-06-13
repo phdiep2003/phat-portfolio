@@ -132,10 +132,9 @@
 }
 
 /* This will apply the style to all the date */
-.date {
+.date_work {
     font-size: 0.9rem;
     font-style: italic;
-    color: #000;;
 }
 /* Work */
 

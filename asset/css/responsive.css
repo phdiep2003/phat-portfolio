@@ -39,9 +39,15 @@
             display: block;
         }
     } */
-
-
+    [data-bs-theme=dark] .element {
+        --bs-primary-text-emphasis :white;
+        color: var(--bs-primary-text-emphasis);
+        background-color: var(--bs-primary-bg-subtle);
+    }
     @media (max-width: 768px) {
+        .h3{
+            font-size: 0.975rem;
+        }
         .navbar{
             /* --bs-navbar-brand-padding-y: 40px; */
             --bs-navbar-brand-font-size: 0.975rem;

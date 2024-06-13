@@ -40,16 +40,20 @@ section {
 	font-weight:bold;
 }
 
+.h4{
+	font-size: 0.9rem;
+	font-weight:bold;
+	line-height: 75%;
+	/* margin: 0.3rem 0rem; */
+}
+
 i {
 	font-size:0.9rem;
 	line-height: 1.7rem;
 }
 
 
-h4{
-	font-size: 1rem;
-	margin: 0.3rem 0rem;
-}
+
 
 /* ul {
     display: block;
