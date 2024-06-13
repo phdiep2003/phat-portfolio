@@ -1,35 +1,37 @@
-// JavaScript for dropdown functionality
-document.addEventListener('DOMContentLoaded', function () {
-    const dropdownItems = document.querySelectorAll('.header__navbar-dropdown');
-
-    dropdownItems.forEach(function (item) {
-        item.addEventListener('click', function (event) {
-            const dropdownContent = this.querySelector('.header__navbar-dropdown-content');
-            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
-            event.stopPropagation();
-        });
-    });
-
-    // Close dropdown when clicking outside of it
-    window.addEventListener('click', function (event) {
-        dropdownItems.forEach(function (item) {
-            const dropdownContent = item.querySelector('.header__navbar-dropdown-content');
-            if (dropdownContent.style.display === 'block' && !item.contains(event.target)) {
-                dropdownContent.style.display = 'none';
-            }
-        });
-    });
-});
-
-
+// Cookie chart
 var canvasElement = document.getElementById("cookieChart");
 
 var config =  {
     type:"bar",
     data: {
-        labels:["EV/Sales Multiple", "EV/EBITDA","EV/EBIT","P/E"],
-        datasets: [{label:"in USD", data:[40,50,60,70]}],
+        labels:["EV/Sales", "EV/EBITDA","EV/EBIT","P/E"],
+        datasets: [{
+            label:"in USD", 
+            data:[40,50,60,70],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                // 'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 205, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(54, 162, 235, 1)',
+                // 'rgba(153, 102, 255, 1)',
+                // 'rgba(201, 203, 207, 1)'
+              ],
+            borderColor: [
+                'rgb(255, 99, 132)',
+                // 'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)'
+                // 'rgb(153, 102, 255)',
+                // 'rgb(201, 203, 207)'
+              ],
+            borderWidth: 1
+            }],
     },
+    options: {
+        indexAxis: 'y',
+    }
 };
 
 var cookieChart = new Chart (canvasElement,config);

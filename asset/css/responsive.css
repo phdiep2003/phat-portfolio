@@ -43,9 +43,12 @@
 
     @media (max-width: 768px) {
         .navbar{
-            --bs-navbar-brand-padding-y: 40px;
+            /* --bs-navbar-brand-padding-y: 40px; */
             --bs-navbar-brand-font-size: 0.975rem;
-            /* line-height: 3rem; */
+            line-height: 3rem;
+        }
+        .nav-link{
+            --bs-nav-link-font-size: 0.975rem;
         }
 
         .container-fluid {  
@@ -78,10 +81,10 @@
         .gallery {
             max-width: 100%; /* Set the image width to match the width of the phone */
         }
-        .section-list{
+        /* .section-list{
             list-style: none;
             padding:0px;
-        }
+        } */
         .header__navbar{
             display: none !important; /* hide the header on smaller screens */
         }

@@ -2,23 +2,23 @@
 
 .navbar {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    --bs-navbar-brand-font-size:1.5rem;
+    --bs-navbar-brand-font-size:1.25rem;
     --bs-navbar-brand-color:white;
     --bs-navbar-nav-link-padding-x:2rem;
     line-height: 2rem;
     padding:0;
+    
 }
 .container-fluid {  
     display:flex !important;
     background-color:var(--cmu-color);
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: space-evenly!important;
+    padding-top:.5rem;
 }
-.offcanvas .offcanvas-end{
-    max-width: 150%;
-}
+
 .navbar-nav {
-    width: 100%;
+    width: 100%;    
     font-size: calc(0.4rem + .6vw);
     font-family: Helvetica, sans-serif;
     justify-content: space-evenly;
