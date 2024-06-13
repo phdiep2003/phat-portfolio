@@ -6,14 +6,49 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="asset/media/Phat.png">
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" href=asset/css/base.css>
 	<link rel="stylesheet" href=asset/css/main.css>
 	<link rel="stylesheet" href=asset/css/responsive.css> 
 	<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 </head>
 <body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	<header>
-		<nav>
+		<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="#about-me"> <strong> PHAT (HENRY) DIEP </strong></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		  </button>
+    		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    		    <div class="offcanvas-header">
+    		      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+    		      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    		    </div>
+    		    <div class="offcanvas-body">
+    		      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+    		        <li class="nav-item">
+						<a class="nav-link" aria-current="page" href="#about-me"> <strong> About Me</strong></a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#education"><strong> Education</strong></a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#work"><strong> Work Experience</strong></a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#work"><strong> Certificate</strong></a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link"  target="_blank" href="https://www.linkedin.com/in/phat-diep/"> <strong> LinkedIn </strong></a>
+					  </li>
+					</ul>
+				</div>
+			  </div>
+			</div>
+		</nav>
+		<!-- <nav>
 			<a class="header__navbar-top" href="#about-me"><h1>PHAT (HENRY) DIEP</h1></a>
 			<ul class=header__navbar>
 				<li><a class=header__navbar-item href="#about-me"> About Me</a></li>
@@ -23,6 +58,7 @@
 				<li><a class=header__navbar-item target="_blank" href="https://www.linkedin.com/in/phat-diep/"> LinkedIn </a></li>
 			</ul>
 		</nav>
+		<label for="navbar-toggle" class="navbar-toggle-label">&#9776;</label> -->
 	</header>
 
 	<main class="main">
@@ -30,13 +66,13 @@
 			<div class="about-me">
 				<img class = "home-img" src = asset/media/photo.JPG alt = 'My Photo'>
 				<ul class = 'body__heading-text'>
-					<li><h2>- I'm Phat (Henry) Diep</h2></li>
-					<li><h3>Quant Analysts !</h3></li>
+					<li><h2 class = "h2">- I'm Phat (Henry) Diep</strong></li>
+					<li><h3 class = "h3"><strong>Quant Analysts !</strong></h3></li>
 					<li><p id = "summary">Hi, I'm Phat, a rising senior at Carnegie Mellon University. After 2 years of challenging myself with Computer Science @ CMU, I have developed a deep enthusiasm for Quant Finance and have accomplished a good deal of projects. I'm motivated to grow professionally with more experience.</p></li>
 					<li><a class = "certi" href="https://www.linkedin.com/in/phat-diep/" target="_blank"> <button> My LinkedIn </button></a></li>
 				</ul>
 			</div>
-			<h2>Skills Summary</h2>
+			<h2 class="h2">Skills Summary</h2>
 			<ul>
 				<li><b>Corporate Finance:</b> Financial Modelling (3-Statement, DCF, M&A, LBO),Intrinsic Valuation (including Startups, Financial Distressed) </li> 
 				<li><b>Investment:</b> Asset Allocation (Markowitz, Black-Literman), Multifactor Models (Fama & French), Derivative Strategies (Swaps, Futures, Options), Bloomberg Securities Screening </li>
@@ -48,7 +84,7 @@
 		</section>
 		<section id="education">
 			<div class = 'education'> 
-				<h2>Education</h2>
+				<h2 class="h2">Education</h2>
 				<div class = 'working'>
 					<h3><b>Carnegie Mellon University </b> , Doha, Qatar</h3>
 					<b>Expected Graduation: 2025</b>
@@ -103,7 +139,7 @@
 
 		</section>
 		<section id="work">
-    		<h2>Work History</h2>
+    		<h2 class="h2">Work History</h2>
 			<div class = 'working'>
 				<h3 class = "title work"><strong>Carnegie Mellon University </strong> - Accounting & Calculus 3 – Course Assistant | Qatar</h3>
 				<h3 class = "date work">Aug 2023 - Present</h3>
@@ -144,7 +180,7 @@
 
 
 		<section id="certificate">
-			<h2>Certificate</h2>
+			<h2 class="h2">Certificate</h2>
 			<div class = 'certificate'>
 				<div class = 'working'>
 					<h3><a class = "certi" href="https://drive.google.com/file/d/1jxrZNnlkJlyzBcaeTD0vBSNmDP7aAYw4/view?usp=sharing" target="_blank">Advance Your Python Skills for Data Science (LinkedIn)</a></h3>

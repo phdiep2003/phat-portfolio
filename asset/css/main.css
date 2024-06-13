@@ -1,5 +1,30 @@
 /* Header (nav-bar) */
-.header__navbar-top{
+
+.navbar {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:0;
+    --bs-navbar-brand-font-size:1.5rem;
+    --bs-navbar-brand-color:white;
+    --bs-navbar-nav-link-padding-x:2rem;
+}
+.container-fluid {  
+    display:flex !important;
+    background-color:var(--cmu-color);
+    flex-direction: column;
+    justify-content: space-evenly!important;
+}
+.offcanvas .offcanvas-end{
+    max-width: 150%;
+}
+.navbar-nav {
+    width: 100%;
+    font-size: calc(0.4rem + .6vw);
+    font-family: Helvetica, sans-serif;
+    justify-content: space-evenly;
+    --bs-nav-link-color:white;
+    --bs-nav-link-hover-color:rgba(255,255,255,0.5);
+}
+/* .header__navbar-top{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:white;
 }
@@ -15,7 +40,7 @@
     color: white;
     width: 100%;
     padding: 10px 15px; /* Adjust padding as needed */
-}
+/* }
 
 .header__navbar-item{
     font-size: 1.1em;
@@ -25,13 +50,36 @@
     color:rgba(255,255,255,0.5);
 }
 
-.body__heading-text{
-    list-style: none;
+.header__navbar-dropdown {
+    position: relative;
 }
+
+.header__navbar-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 100;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.header__navbar-dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.header__navbar-dropdown-content a:hover {
+    background-color: #555;
+} */
 
 /* Home */
 .about-me{
     display: flex;
+    list-style: none;
+    padding-bottom:6px;
 }
 
 .home-img{
@@ -45,6 +93,11 @@
     justify-content: center;
     line-height: 1.5rem;
 }
+
+.body__heading-text{
+    list-style: none;
+}
+
 /* Education */
 
 /* #education,#work{

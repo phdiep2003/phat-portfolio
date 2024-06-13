@@ -6,31 +6,17 @@ html {
   
 *{
 	font-size: 1rem 0;
-	--text-color:#000;
-	--cmu-color:rgb(176, 28, 51)
+	--text-color:#000!important;
+	--cmu-color:rgb(176, 28, 51)!important;
 }
 .main{
-	margin-top: 10em;
+	margin-top: 7em;
 }
 
 body {
 	font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-	margin: 0;
-	padding: 0;
 }
 
-nav {
-	max-width: 100%;
-	background-color:var(--cmu-color);
-	color: var(--text-color);
-	position: fixed;
-	z-index: 99;
-	align-content: center;
-	width: 100%;
-	top:-8px;
-	padding: 10px 0px 40px 0px;
-}
 
 button{
 	font-weight: bold;
@@ -44,25 +30,6 @@ button{
 }
 
 
-nav h1{
-	text-align: center;
-}
-
-nav ul {
-	font-weight: bold;
-	display: flex;
-	justify-content: center;
-	list-style: none;
-	background-color:var(--cmu-color);
-	color: var(--text-color);
-	position: fixed;
-}
-
-nav li {
-	margin: 0 1rem;
-}
-
-
 main {
 	max-width: 800px;
 	margin: 1.5rem auto;
@@ -71,38 +38,29 @@ main {
 
 section {
     color: var(--text-color);
-	/* margin: 1.5rem 0; */
 }
 
-h2 {
+.h2 {
 	font-size: 1.5rem;
 	color: var(--cmu-color);
+	font-weight:bold;
 }
 
-h3{
+.h3{
 	font-size: 1.1rem;
-	margin: 0 0;
 }
+
+i {
+	font-size:0.9rem;
+	line-height: 1.7rem;
+}
+
 
 h4{
 	font-size: 1rem;
 	margin: 0.3rem 0rem;
 }
 
-ul {
-	margin: 0;
-	padding-left: 20px;
-}
-
-li {
-	font-size:0.9rem;
-	line-height: 1.7rem;
-}
-
-a {
-	color: var(--text-color);
-	text-decoration: none;
-}
 
 
 /* form {
