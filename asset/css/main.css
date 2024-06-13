@@ -82,7 +82,7 @@
     padding-bottom:6px;
 }
 
-.home-img{
+.img-fluid{
     max-height:250px;
     /* border-radius: 10px; */
 }
@@ -98,6 +98,17 @@
     list-style: none;
 }
 
+.btn{
+	font-weight: bold;
+	/* background-color: var(--cmu-color); */
+	color:  var(--cmu-color);
+    border-color:  var(--cmu-color);
+	padding: 10px;
+	margin-top:5px;
+	cursor: pointer;
+    --bs-btn-hover-border-color: rgba(255,255,255,0.5);
+    --bs-btn-hover-bg: var(--cmu-color);
+} */
 /* Education */
 
 /* #education,#work{

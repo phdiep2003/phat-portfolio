@@ -52,14 +52,12 @@
     .body__heading-text{
         padding: 0px;
     }
-    .image {
-        order: -1; /* Move the image above the text on smaller screens */
-    }
-    .home-img{
+    .img-fluid{
         max-width: 100%;
         height: 100%;
         max-height:none;
-    }
+        padding-bottom: 10px;
+    } 
 
     .gallery {
         max-width: 100%; /* Set the image width to match the width of the phone */

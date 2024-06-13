@@ -17,19 +17,6 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-
-button{
-	font-weight: bold;
-	background-color: var(--cmu-color);
-	color: white;
-	padding: 10px;
-	margin-top:5px;
-	border: none;
-	display: flex;
-	cursor: pointer;
-}
-
-
 main {
 	max-width: 800px;
 	margin: 1.5rem auto;
@@ -48,6 +35,7 @@ section {
 
 .h3{
 	font-size: 1.1rem;
+	font-weight:bold;
 }
 
 i {
