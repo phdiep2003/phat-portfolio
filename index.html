@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html data-bs-theme="auto">
 <head>
 	<title>Phat Henry Diep's Portfolio</title>
 	<meta charset="UTF-8">
@@ -10,16 +10,17 @@
 	<link rel="stylesheet" href=asset/css/base.css>
 	<link rel="stylesheet" href=asset/css/main.css>
 	<link rel="stylesheet" href=asset/css/responsive.css> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 </head>
 <body>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	<header>
-		<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-			<div class="container-fluid">
+		<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid flex-lg-column">
 			  <a class="navbar-brand" href="#about-me"> <strong> PHAT (HENRY) DIEP </strong></a>
 			  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      			<span class="navbar-toggler-icon"></span>
+      			<span class="navbar-toggler-icon-light" data-bs-theme=dark></span>
     		  </button>
     		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
     		    <div class="offcanvas-header">
@@ -43,7 +44,16 @@
 					  <li class="nav-item">
 						<a class="nav-link"  target="_blank" href="https://www.linkedin.com/in/phat-diep/"> <strong> LinkedIn </strong></a>
 					  </li>
+					  <li class="nav-item"></li>
+					  </li>
 					</ul>
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
+						<label class="form-check-label" for="darkModeSwitch">
+							<!-- <i class="bi bi-sun-fill" ></i> -->
+							<i class="bi bi-moon-fill nav-link"></i>
+						</label>
+					</div>
 				</div>
 			  </div>
 			</div>
@@ -64,7 +74,7 @@
 	<main class="main">
 		<section id="about-me">
 			<div class="about-me">
-				<img class="img-fluid" src = asset/media/photo.JPG alt = 'My Photo'>
+				<img class="img-fluid img-thumbnail" src = asset/media/photo.JPG alt = 'My Photo'>
 				<ul class = 'body__heading-text'>
 					<li><h2 class = "h2">- I'm Phat (Henry) Diep</strong></li>
 					<li><h3 class = "h3"><strong>Quant Analysts !</strong></h3></li>

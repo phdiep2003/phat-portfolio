@@ -39,59 +39,75 @@
             display: block;
         }
     } */
-    [data-bs-theme=dark] .element {
+    /* [data-bs-theme=dark] .element {
         --bs-primary-text-emphasis :white;
         color: var(--bs-primary-text-emphasis);
         background-color: var(--bs-primary-bg-subtle);
-    }
+    } */
     @media (max-width: 768px) {
-        .h3{
+        .h3 {
             font-size: 0.975rem;
         }
-        .navbar{
+
+        .navbar {
             /* --bs-navbar-brand-padding-y: 40px; */
             --bs-navbar-brand-font-size: 0.975rem;
             line-height: 3rem;
         }
-        .nav-link{
+
+        .nav-link {
             --bs-nav-link-font-size: 0.975rem;
         }
 
-        .container-fluid {  
+        /* .container-fluid {  
             flex-direction: row;
-        }
+        } */
 
         .main {
-            flex-direction: column; 
-            font-size:0.9rem;
-            text-align:justify;
+            flex-direction: column;
+            font-size: 0.9rem;
+            text-align: justify;
         }
+
         .about-me {
             flex-direction: column;
-            flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+            flex-wrap: wrap;
+            /* Allow items to wrap onto multiple lines */
             justify-content: center;
         }
+
         ul {
             padding-inline-start: 13px;
         }
-        .body__heading-text{
+
+        .body__heading-text {
             padding: 0px;
         }
-        .img-fluid{ 
+
+        .img-fluid {
             max-width: 100%;
             height: 100%;
-            max-height:none;
+            max-height: none;
             padding-bottom: 10px;
-        } 
+        }
 
         .gallery {
-            max-width: 100%; /* Set the image width to match the width of the phone */
+            max-width: 100%;
+            /* Set the image width to match the width of the phone */
         }
+
         /* .section-list{
             list-style: none;
             padding:0px;
         } */
-        .header__navbar{
-            display: none !important; /* hide the header on smaller screens */
+        .header__navbar {
+            display: none !important;
+            /* hide the header on smaller screens */
         }
+    }
+    @media (min-width: 992px) {
+        .nav-link {
+            color: white !important;
+        }
+
     }

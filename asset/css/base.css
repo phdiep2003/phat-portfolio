@@ -14,7 +14,6 @@ header {
 	--cmu-color:rgb(176, 28, 51)!important;
 }
 
-
 body {
 	font-family: Arial, sans-serif;
 }
@@ -23,10 +22,6 @@ main {
 	max-width: 800px;
 	margin: 1.5rem auto;
 	padding: 0 1rem;
-}
-
-section {
-    color: var(--text-color);
 }
 
 .h2 {

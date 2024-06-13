@@ -42,10 +42,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const htmlElement = document.documentElement;
     const switchElement = document.getElementById('darkModeSwitch');
 
+    // if local storage has key bsTheme => change theme to value in local storage
+    // if not write the current system theme
     // Set the default theme to dark if no setting is found in local storage
-    const currentTheme = localStorage.getItem('bsTheme') || 'dark';
+    let currentTheme = localStorage.getItem('bsTheme') || null;
+    if (currentTheme === null) {
+        currentTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
     htmlElement.setAttribute('data-bs-theme', currentTheme);
     switchElement.checked = currentTheme === 'dark';
+    localStorage.setItem('bsTheme', currentTheme);
 
     switchElement.addEventListener('change', function () {
         if (this.checked) {
@@ -56,4 +62,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
             localStorage.setItem('bsTheme', 'light');
         }
     });
+
+    // function updateTheme() {
+    //     document
+    //       .querySelector("html")
+    //       .setAttribute(
+    //         "data-bs-theme",
+    //         window.matchMedia("(prefers-color-scheme: dark)").matches
+    //           ? "dark"
+    //           : "light"
+    //       );
+    //   }
+    //   window
+    //     .matchMedia("(prefers-color-scheme: dark)")
+    //     .addEventListener("change", updateTheme);
+    //   updateTheme();
+  
 });
