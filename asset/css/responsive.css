@@ -104,6 +104,10 @@
             display: none !important;
             /* hide the header on smaller screens */
         }
+        .working{
+            /* flex-direction: column; */
+            justify-content:flex-start;
+        }
     }
     @media (min-width: 992px) {
         .nav-link {
