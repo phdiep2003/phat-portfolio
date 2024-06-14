@@ -5,12 +5,11 @@ html {
 }
 
 header {
-	height: 8rem; /* set the height of the header to 100 pixels */
+	height: calc(5vw + 5vh); /* set the height of the header to 100 pixels */
 }  
 
 *{
 	font-size: 1rem 0;
-	--text-color:#000!important;
 	--cmu-color:rgb(176, 28, 51)!important;
 }
 
@@ -39,7 +38,6 @@ main {
 	font-size: 0.9rem;
 	font-weight:bold;
 	line-height: 75%;
-	/* margin: 0.3rem 0rem; */
 }
 
 i {
