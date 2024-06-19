@@ -16,8 +16,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     switchElement.addEventListener('change', function () {
         if (this.checked) {
             setTheme('dark');
+            currentTheme = localStorage.getItem('bsTheme');
         } else {
             setTheme('light');
+            currentTheme = localStorage.getItem('bsTheme');
         }
     });
 
@@ -40,7 +42,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var config =  {
         type: "bar",
         data: {
-            labels: ["EV/Sales", "EV/EBITDA","EV/EBIT","P/E","Intrinsic Valuation"],
+            labels: ["EV/Sales", "EV/EBITDA","EV/EBIT","P/E","Intrinsic Value"],
             datasets: [{
                 label: "USD Price/Share", 
                 data: [[18,160],[13.88,98.03],[11.01,71.85],[14.76,68.02],[55.91,67.59]],
@@ -70,12 +72,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
             scales: {
                 x: {
                     stacked: true,
-                    ticks: { color: currentTheme === 'dark' ? 'white' : 'black' }
+                    ticks: { color: currentTheme === 'dark' ? 'white' : 'black' },
+                    grid: { color: currentTheme === 'dark' ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.4)' },
+                    border: {color: currentTheme === 'dark' ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.4)'},
                 },
                 y: {
                     stacked: true,
-                    ticks: { color: currentTheme === 'dark' ? 'white' : 'black' }
-                }
+                    ticks: { color: currentTheme === 'dark' ? 'white' : 'black' },
+                    grid: {color:'rgba(0,0,0,0)'}
+                },
+                
             },
             indexAxis: 'y',
         }
