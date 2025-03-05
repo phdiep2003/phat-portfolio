@@ -1,225 +1,161 @@
-<!DOCTYPE HTML>
-<html data-bs-theme="auto">
+<!DOCTYPE html>
+<html data-bs-theme="auto" lang="en">
 <head>
-	<title>Phat Henry Diep's Portfolio</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/png" href="asset/media/Phat.png">
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-	<link rel="stylesheet" href=asset/css/base.css>
-	<link rel="stylesheet" href=asset/css/main.css>
-	<link rel="stylesheet" href=asset/css/responsive.css> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phat Henry Diep - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+	<link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename = 'media/Phat.png') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">	
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-	<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	<header>
-		<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-			<div class="container-fluid flex-lg-column">
-			  <a class="navbar-brand" href="#about-me"> <strong> PHAT (HENRY) DIEP </strong></a>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      			<span class="navbar-toggler-icon-light" data-bs-theme=dark></span>
-    		  </button>
-    		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-    		    <div class="offcanvas-header">
-    		      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-    		      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    		    </div>
-    		    <div class="offcanvas-body">
-    		      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-    		        <li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#about-me"> <strong> About Me</strong></a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#education"><strong> Education</strong></a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#work"><strong> Work Experience</strong></a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#certificate"><strong> Certificate</strong></a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link"  target="_blank" href="https://www.linkedin.com/in/phat-diep/"> <strong> LinkedIn </strong></a>
-					  </li>
-					  <li class="nav-item"></li>
-					  </li>
-					</ul>
-					<div class="d-none d-lg-block form-check form-switch">
-						<input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
-						<label class="form-check-label" for="darkModeSwitch">
-							<!-- <i class="bi bi-sun-fill" ></i> -->
-							<i class="bi bi-moon-fill nav-link"></i>
-						</label>
-					</div>
-				</div>
-			  </div>
-			</div>
-		</nav>
-	</header>
-
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid flex-lg-column">
+                <a class="navbar-brand" href="#about-me"><strong>{{ profile.name }}</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon-light" data-bs-theme="dark"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#about-me"><strong>About Me</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#education"><strong>Education</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#work"><strong>Work Experience</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#certificate"><strong>Certificate</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/phat-diep/"><strong>LinkedIn</strong></a>
+                            </li>
+                        </ul>
+                        <div class="d-none d-lg-block form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
+                            <label class="form-check-label" for="darkModeSwitch">
+                                <i class="bi bi-moon-fill nav-link"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 	<main class="main">
 		<section id="about-me">
 			<div class="about-me">
-				<img class="d-none d-sm-block d-sm-none d-md-block img-fluid img-thumbnail" src = asset/media/photo.JPG alt = 'My Photo'>
-				<ul class = 'body__heading-text'>
-					<li><h2 class = "h2">- I'm Phat (Henry) Diep</strong></li>
-					<li><h3 class = "h3"><strong>Quant Analysts !</strong></h3></li>
-					<li><p id = "summary">Hi, I'm Phat, a rising senior at Carnegie Mellon University. After 2 years of challenging myself with Computer Science at CMU,
-						 I have developed a deep enthusiasm for Quant Finance and have accomplished a good deal of projects. I'm motivated to grow professionally with more experience.</p></li>
-					<div class = "text-lg-start text-center">
+				<img class="d-none d-sm-block d-sm-none d-md-block img-fluid img-thumbnail" src="{{ url_for('static', filename='media/photo.JPG') }}" alt="My Photo">
+				<ul class="body__heading-text">
+					<li><h2 class="h2">- I'm Phat (Henry) Diep</h2></li>
+					<li><h3 class="h3"><strong>Quant Researchers!</strong></h3></li>
+					<li>
+						<p id="summary">Hi, I'm Phat, a senior at Carnegie Mellon University. After 2 years of challenging myself with Computer Science at CMU, I have developed a deep enthusiasm for Quant Finance and have accomplished a good deal of projects. I'm motivated to grow professionally with more experience.</p>
+					</li>
+					<div class="text-lg-start text-center">
 						<a class="btn btn-outline-primary" href="https://www.linkedin.com/in/phat-diep/" target="_blank" role="button">My LinkedIn</a>
 					</div>
 				</ul>
 			</div>
-			<img class="d-lg-none d-xl-block d-xl-none d-md-none d-lg-block img-fluid img-thumbnail" src = asset/media/photo.JPG alt = 'My Photo'>
+			<img class="d-lg-none d-xl-block d-xl-none d-md-none d-lg-block img-fluid img-thumbnail" src="{{ url_for('static', filename='media/photo.JPG') }}" alt="My Photo">
+			
 			<h2 class="h2">Skills Summary</h2>
 			<ul class="section-list">
-				<li><b>Corporate Finance:</b> Financial Modelling (3-Statement, DCF, M&A, LBO), Intrinsic Valuation (including Startups, Financial Distressed) </li> 
-				<li><b>Investment:</b> Asset Allocation (Markowitz, Black-Literman), Multifactor Models (Fama & French), Derivative Strategies (Swaps, Futures, Options), Bloomberg Securities Screening </li>
-				<li><b>Data Communication: </b>Microsoft Excel (Master), Python, SQL, VBA, R-Studio, IBM-SPSS, Tableau. </li>
-				<li><b>Programming Language:</b> Python, C, HTML & CSS.</li>
-				<!-- <li>Math: Linear Programming Optimization, Process Flexibility with Stochastic Demand. </li> -->
+				<li><b>Corporate Finance:</b> Financial Modelling (3-Statement, DCF, M&A, LBO), Intrinsic & Risk Neutral Valuations</li>
+				<li><b>Investment:</b> Asset Allocation (Markowitz, Black-Literman), Multifactor Models (Fama & French), Derivative Strategies (Swaps, Futures, Options), Bloomberg Securities Screening</li>
+				<li><b>Data Communication:</b> Microsoft Excel (Master), Python, SQL, VBA, R-Studio, IBM-SPSS, Tableau.</li>
+				<li><b>Programming Languages:</b> Python, Java, JavaScript, SQL, C0 & C, SML, HTML & CSS.</li>
 			</ul>
-
-		</section>
-		<section id="education">
-			<div class = 'education'> 
-				<h2 class="h2">Education</h2>
-				<div class = 'working'>
-					<h3 class ="h3">Carnegie Mellon University</h3>
-					<b>Expected Graduation: 2025</b>
-				</div>
-				<ul class="section-list">
-					<li> <b>Bachelor of Science in Business Administration</b> - GPA: 3.81/4.0 </li>
-					<li> <b>Concentration: </b>Finance (Quantitative) 
-					<li><b> Minor:</b> Computer Science - Dean's List: All semesters</li>
-					<li> <b>Certificates: </b>CMUQ’s AI & Finance (pursuing), CFI Corporate Finance Foundations Professional Certificate,Bloomberg Market Concepts, Advance Python Skills for Data Science (LinkedIn), Financial Analyst (LinkedIn) </li>
-				</ul>
-				<h2 class = "h2"> Courses Skills </h2>
-				<h3 class = "h3"> Finance </h3>
-				<ul class="section-list">
-					<li>Constructed Fama & French 5-factor Model in Python, capturing cumulative abnormal return with event studies.</li>
-					<li>Managed an active portfolio of Large Growth Equities on simulated software, yielding 14% return p.a.</li>
-					<li>Built 3-Statement & DCF Models in Excel, adjusting for WACC and Free Cash Flow volatility in Scenario Analysis.</li>
-					<li>Solved Mergers and Acquisitions cases for Startups, recommending Leveraged Buy Out and bidding strategies.</li>
-					<li>Valuated financial distressed companies with Black Scholes Options pricing in VBA, exporting to Call option prices.</li>
-					<li>Optimized capital structure through tax shield, levering beta and asset for DCF model.</li>
-					<li>Analyzed cases of Mergers and Acquisitions with synergies, recommending bidding strategies for acquirers.</li>
-				</ul>
-				<canvas id = "cookieChart" width="250" height = "150"></canvas>
-				<script src = "asset/JS/scripts.js"></script>
-				<h3 class = "h3"> Data Science and Programming </h3>
-				<ul class="section-list">
-					<li>Built Screening Dashboards on the S&P500 in Tableau, identifying cheap and profitable shares.</li> 
-					<li>Trained supervised Machine Learning model in Python, classifying credit score for Bank’s deposits data.</li> 
-				</ul>
-				<img class="gallery" src="asset/media/data.png" alt ="Data-financial.png">
-				<h3 class = "h3">Business Communication</h3>
-				<ul class="section-list">
-					<li>Conceptualized a hedge fund, designing corporate strategies for 10-year regional expansion.</li> 
-					<li>Built a website at phdiep2003.qhedge for marketing, writing SEO content to drive customers’ visits.</li> 
-				</ul>
-				<a href="https://phdiep2003.github.io/QHedge.github.io/" target="#"><img class="gallery" src="asset\media\website.png" alt ="Business-communication.png"></a>
-				<!-- <h3> Research Skills </h3>
-				<div class = 'working'>
-					<h3 class = "title work"><strong>Carnegie Mellon's Independent Study</strong> - Quantitative Finance - Extracurricular</h3>
-					<h3 class = "date work">May 2023 - Present</h3>
-				</div>
-				<ul class="section-list">
-				  <li>Built an API in Python, scraping S&P500 latest options data from Yahoo Finance daily for 3 months.</li>
-				  <li>Conducted fundamental analysis for S&P500 in R, extracting a portfolio of 10 bullish stocks.</li>
-				  <li>Identified overvalued/undervalued securities with NumPy and Plotly for data manipulation and visualization.</li>
-				  <li>Applied Black Scholes model for volatility, acquiring implied price for top 10 strikes.</li>
-				  <li>Analyzed put options with Theta-decay method in Python, learning long & short positions.</li>
-				  <li>Optimized return on risk-averse cash secured put options, generating comprehensive reports reports in LaTeX.</li>
-				</ul> -->
-			</div>
-
 		</section>
 		<section id="work">
-    		<h2 class="h2">Work History</h2>
-			<div class = 'working'>
-				<h3 class = "h3 title_work"><strong>Doha Bank</strong> </h3>
-				<h3 class = "date_work"> May. 2024 - Present</h3>
-			</div>
-			<h4 class = "h4">Treasury and Investment - Intern, Qatar</h4>
-    		<ul class="section-list">
-        		<li> Constructed Black-Litterman Asset Allocation Model, optimizing spreads of 30bps on Central Bank weight constraints.</li>
-        		<li> Built Dynamic Dashboard macros in VBA, generating Exposure trends from multiple folders in less than 1-minute.</li>
-        		<li> Designed Integrated Worksheet and Presentation for Treasury, yielding a 20% increase in work efficiency..</li>
-				<li> Automated LDR projection for ALM fixed deposits, capturing maturing deposits for repositioning.</li>
-    		</ul>
-
-			<div class = 'working'>
-				<h3 class = "h3 title_work"><strong>Carnegie Mellon University </strong></h3>
-				<h3 class = "date_work">Aug. 2023 - May. 2024</h3>
-			</div>
-			<h4 class = "h4">Accounting & Finance – Course Assistant | Qatar</h4>
-    		<ul class="section-list">
-        		<li> Supported in financial ratios project, offering measurements to capture profitability, capital structure, and liquidity.</li>
-        		<li> Assisted students with Bloomberg’s relative valuation, matching target company with industry mean and median.</li>
-        		<li> Tutored students on bond pricing, inventory & depreciation method, providing glossaries for liquidity and profitability.</li>
-				<li> Provided balance sheet problems with adjusting entries, gaining deep insights into accounting financial models.</li>
-				<li> Proctored problem sets for derivative & integral in 3D, offering visualizing tools and methods for students.</li>
-    		</ul>
-
-			<div class = 'working'>
-				<h3 class = "h3 title_work"><strong>VELA Academy </strong> </h3>
-				<h3 class = "date_work">Jan. 2021 – Jan. 2023</h3>
-			</div>
-			<h4 class = "h4">Part Time Marketing - Teacher | Vietnam</h4>
-			<ul class="section-list">
-        		<li> Upgraded website with HTML and CSS, leveraging company image and increasing monthly visits by nearly 100%.</li>
-        		<li> Instructed IELTS for 2 years, helping a total of 70 students familiarize with formal writings and academic readings.</li>
-        		<li> Led on-field sales campaigns in high schools, acquiring 60 new customers in the same quarter.</li>				
-    		</ul>
-
-			<div class = 'working'>
-				<h3 class = "h3 title_work"><strong>Coca-Cola </strong> </h3>
-				<h3 class = "date_work">Oct. - Dec. 2022</h3>
-			</div>
-			<h4 class = "h4">FIFA Intern – Audit | Qatar</h4>
-			<ul class="section-list">
-        		<li> Managed FIFO inventory in Excel with Vlookup, pivot tables, reducing slow-moving stock by 25%.</li>
-        		<li> Managed team workflow and operation, offering dynamic event organization management for over 200 attendees.</li>
-    		</ul>
-    		<h3 class = "h3">Extracurricular Activities</h3>
-   			<ul class="section-list">
-        			<li>Founded Carnegie Math Club, attracting over 30 attendees in Math Career and 7 Millenials Problems event. </li>
-        			<li>Joined PwC mentorship program and research in Quantitative Finance, maintaining strong academic performance.</li>
-        			<li>Volunteered in Alice Programming and Math Pi Competition, refining communication and event organizational skills.</li>
-    		</ul>
+			<h2 class="h2">Work History</h2>
+			{% for job in work_history %}
+			<div class="job">  
+				<div class='title-date'>
+					<h3 class="h3 title_work"><strong>{{ job.company }}</strong></h3>
+					<h3 class="date_work">{{ job.date }}</h3>
+				</div>
+				<h4 class="h4">{{ job.position }} | {{ job.location }}</h4>
+				<ul class="section-list">
+					{% for responsibility in job.responsibilities %}
+					<li>{{ responsibility }}</li>
+					{% endfor %}
+				</ul>
+			</div> 
+			{% endfor %}	
 		</section>
-
-
-		<section id="certificate">
-			<h2 class="h2">Certificate</h2>
-			<div class = 'certificate'>
-				<div class = 'working'>
-					<h3 class="h3"><a class = "certi" href="https://drive.google.com/file/d/1jxrZNnlkJlyzBcaeTD0vBSNmDP7aAYw4/view?usp=sharing" target="_blank">Advance Your Python Skills for Data Science (LinkedIn)</a></h3>
-					<h3 class = "date_work">Jul. 2022</h3>
+			<!-- Education Section -->
+			<section id="education">
+				<div class='education'> 
+					<h2 class="h2">Education</h2>
+					{% for edu in education %}
+					<div class='title-date'>
+						<h3 class="h3 title_work">{{ edu.institution }}</h3>
+						<h3 class="date_work">{{ edu.expected_graduation}}</h3>
+					</div>
+					<ul class="section-list">
+						<li><b>{{ edu.degree }}</b> - GPA: {{ edu.gpa }}</li>
+						<li><b>Concentration:</b> {{ edu.concentration }}</li>
+						<li><b>Minor:</b> {{ edu.minor }} - Dean's List: {{ edu.deans_list }}</li>
+						<li><b>Certificates:</b>
+							{% for certificate in edu.certificates %}
+								{{ certificate }}{% if not loop.last %}, {% endif %}
+							{% endfor %}
+						</li>
+					</ul>
+					{% endfor %}
 				</div>
-				<li>Big Data, Python (Programming Language), Object-Oriented Programming (OOP)</li>
+			</section>
+			
+
+			<!-- Course Skills Section -->
+			<div id = "courseSkills">
+				<h2 class="h2">Course Skills</h2>
 			</div>
 
-			<div class = 'certificate'>
-				<div class = 'working'>
-					<h3 class="h3"><a class = "certi" href="https://drive.google.com/file/d/1Dn3aEyGkB9P0pGOiN3TqT3Ba6xGFTYwH/view" target="_blank">Financial Analyst LinkedIn Learning Path (LinkedIn)</a></h3>
-					<h3 class = "date_work">Nov. 2011</h3>
-				</div>
-				<li>Strategic Planning, Corporate Finance, Financial Modeling, Financial Accounting, Financial Analysis, Financial Statement Analysis, Microsoft Excel</li>
-			</div>
-			<div class = 'certificate'>
-				<div class = 'working'>
-					<h3 class="h3"><a class = "certi" href="https://portal.bloombergforeducation.com/certificates/EmHkZ7wM4zw51zwXGebps6nn" target="_blank">Bloomberg Market Concepts (BMC)</a></h3>
-					<h3 class = "date_work">Oct. 2011</h3>
-				</div>
-				<li>Economic Indicators, Currencies, Fixed Income, and Equities</li>
-			</div>
+			<canvas id = "cookieChart" width="250" height = "150"></canvas>
 
+			<div id = "extracurriculars">
+				<h3 class="h3">Extracurricular Activities</h3>
+				<ul class="section-list">
+					{% for activity in extracurriculars %}
+					<li>{{ activity }}</li>
+					{% endfor %}
+				</ul>
+			</div>	
+			
+			<section id="certificate">
+				<h2 class="h2">Certificates</h2>
+				{% for cert in certificates %}
+				<div class='certificate'>
+					<div class='title-date'>
+						<h3 class="h3">
+							<a class="certi" href="{{ cert.link }}" target="_blank">{{ cert.title }}</a>
+						</h3>
+						<h3 class="date_work">{{ cert.date }}</h3>
+					</div>
+					<ul class="section-list">
+						<li>{{ cert.skills|join(', ') }}</li>
+					</ul>
+				</div>
+				{% endfor %}
+			</section>
+		</div>
 	</main>
 </body>
 </html>

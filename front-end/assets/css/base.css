@@ -17,6 +17,11 @@ body {
 	font-family: Arial, sans-serif;
 }
 
+[data-bs-theme="dark"] {
+	--bs-body-color: #dee2e6 !important;
+	color: var(--bs-body-color);
+}
+
 main {
 	max-width: 800px;
 	margin: 1.5rem auto;

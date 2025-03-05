@@ -1,5 +1,4 @@
-/* Header (nav-bar) */
-
+/* Header */
 .navbar {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     --bs-navbar-brand-font-size:1.25rem;
@@ -9,6 +8,7 @@
     padding:0;
     
 }
+
 .container-fluid {  
     display:flex !important;
     background-color:var(--cmu-color);
@@ -105,22 +105,18 @@ i {
 }
 /* Work */
 
-.working{
+.title-date{
     display: flex;
     justify-content: space-between;
 }
 
 /* Certificate */
-.certificate {
-    padding-bottom: 1rem;
-}
-
 .title{
     font-size: 0.9rem;
     font-weight: normal;
 }
 .certi{
-    padding-bottom: 0.2rem;
+    font-size: 0.9rem;
     /* color:rgb(93, 134, 255); */
     color:var(--cmu-color);
 }
